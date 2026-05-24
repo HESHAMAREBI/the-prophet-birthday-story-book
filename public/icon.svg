@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Rich emerald base gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#023720" />
+      <stop offset="60%" stop-color="#012414" />
+      <stop offset="100%" stop-color="#00120a" />
+    </radialGradient>
+    
+    <!-- True metallic gold gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b98e14" />
+      <stop offset="30%" stop-color="#f5d670" />
+      <stop offset="50%" stop-color="#b98e14" />
+      <stop offset="70%" stop-color="#fff0aa" />
+      <stop offset="100%" stop-color="#96700c" />
+    </linearGradient>
+
+    <!-- Subtler gold for decorative background patterns -->
+    <linearGradient id="goldSubtle" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b98e14" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#f5d670" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#96700c" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+
+  <!-- Outer Arabesque Frame -->
+  <rect x="24" y="24" width="464" height="464" rx="90" fill="none" stroke="url(#goldGrad)" stroke-width="4.5" stroke-dasharray="14 8" opacity="0.8" />
+  <rect x="36" y="36" width="440" height="440" rx="80" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5" />
+
+  <!-- Traditional Islamic Geometric Star Array in Background -->
+  <g opacity="0.35" transform="translate(256, 256) scale(1.35)">
+    <path d="M-80,-80 L80,80 M-80,80 L80,-80 M0,-115 L0,115 M-115,0 L115,0" stroke="url(#goldSubtle)" stroke-width="2" />
+    <circle r="80" fill="none" stroke="url(#goldSubtle)" stroke-width="1.5" stroke-dasharray="4 4" />
+    <circle r="115" fill="none" stroke="url(#goldSubtle)" stroke-width="1" />
+  </g>
+
+  <!-- Islamic Emblem Group -->
+  <g transform="translate(256, 256)">
+    <!-- Main Radiant Sunburst-like Star Halo -->
+    <path d="M 0,-160 L 45,-110 L 110,-110 L 110,-45 L 160,0 L 110,45 L 110,110 L 45,110 L 0,160 L -45,110 L -110,110 L -110,45 L -160,0 L -110,-45 L -110,-110 L -45,-110 Z" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-linejoin="round" />
+    
+    <!-- Secondary Offset Star for arabesque layers -->
+    <path d="M 0,-160 L 45,-110 L 110,-110 L 110,-45 L 160,0 L 110,45 L 110,110 L 45,110 L 0,160 L -45,110 L -110,110 L -110,45 L -160,0 L -110,-45 L -110,-110 L -45,-110 Z" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linejoin="round" transform="rotate(22.5)" opacity="0.7" />
+
+    <circle r="92" fill="#011e11" stroke="url(#goldGrad)" stroke-width="3" />
+
+    <!-- Highly Detailed Elegant Mosque Dome & Minarets Silhouette -->
+    <g transform="translate(0, 15)">
+      <!-- Minaret Left -->
+      <path d="M -50,15 L -50,-40 L -53,-40 L -53,-45 L -47,-45 L -47,-40 L -50,-40 Z" fill="url(#goldGrad)" />
+      <!-- Minaret Right -->
+      <path d="M 50,15 L 50,-40 L 47,-40 L 47,-45 L 53,-45 L 53,-40 L 50,-40 Z" fill="url(#goldGrad)" />
+      
+      <!-- Mosque Wall Base -->
+      <path d="M -40,15 L -40,-10 L 40,-10 L 40,15 Z" fill="url(#goldGrad)" />
+      <!-- Arch Gate Cutout -->
+      <path d="M -15,15 L -15,2 Q 0,-8 15,2 L 15,15 Z" fill="#011e11" />
+
+      <!-- Grand Center Dome with Pinnacle -->
+      <path d="M -28,-10 C -28,-40 28,-40 28,-10 Z" fill="url(#goldGrad)" />
+      <!-- Shimmering Crescent on Top of Grand Dome -->
+      <path d="M 0,-44 C 4,-44 8,-40 8,-35 C 8,-30 2,-26 0,-26 C -2,-26 -8,-30 -8,-35 C -8,-40 -4,-44 0,-44 Z" fill="url(#goldGrad)" />
+      <line x1="0" y1="-10" x2="0" y2="-40" stroke="url(#goldGrad)" stroke-width="2" />
+    </g>
+
+    <!-- Spiritual Golden Crescent and Stars in the Sky -->
+    <g transform="translate(0, -52)">
+      <!-- Elegant Crescent Moon -->
+      <path d="M -5,-25 A 25 25 0 1 0 25 5 A 20 20 0 1 1 -5 -25 Z" fill="url(#goldGrad)" />
+      <!-- Sparkle/Stars -->
+      <path d="M 12,-16 L 14,-12 L 18,-12 L 15,-9 L 16,-5 L 12,-7 L 8,-5 L 9,-9 L 6,-12 L 10,-12 Z" fill="url(#goldGrad)" />
+      <circle cx="-14" cy="5" r="2.5" fill="url(#goldGrad)" />
+      <circle cx="-6" cy="14" r="1.5" fill="url(#goldGrad)" />
+    </g>
+  </g>
+
+  <!-- Text / Calligraphy Ribbon placeholder framing -->
+  <path d="M 112,410 Q 256,430 400,410" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.6" />
+</svg>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@300;400;500;700;900&family=Scheherazade+New:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Amiri", "Scheherazade New", Georgia, serif;
+  --font-sans: "Tajawal", system-ui, sans-serif;
+  --color-gold-50: #fefcf0;
+  --color-gold-100: #fcf6d6;
+  --color-gold-200: #f7e8a3;
+  --color-gold-300: #f2d46b;
+  --color-gold-400: #ebbb3d;
+  --color-gold-500: #dfa11f;
+  --color-gold-600: #c28014;
+  --color-gold-700: #9e5d10;
+  --color-gold-800: #804810;
+  --color-gold-900: #693b11;
+  
+  --color-emerald-deep: #051a10;
+  --color-emerald-card: #0a2b1d;
+  --color-gold-elegant: #d4af37;
+  --color-theme-cream: #f4e6d1;
+  --color-emerald-950: #022c22;
+}
+
+/* Custom Islamic Border, Parchment theme, and calligraphy layout helper classes */
+.parchment-gold-smooth {
+  background: radial-gradient(circle at center, #0a2d1e 0%, #061e13 100%);
+  box-shadow: inset 0 0 45px rgba(212, 175, 55, 0.15);
+}
+
+.parchment-light-smooth {
+  background: radial-gradient(circle at center, #ffffff 0%, #faf6ec 40%, #f7ebd0 100%);
+  box-shadow: inset 0 0 45px rgba(185, 142, 20, 0.12);
+}
+
+.parchment-warm-dark {
+  background: radial-gradient(circle at center, #0a2d1e 0%, #051a10 100%);
+}
+
+.gold-border-corner {
+  background-image: radial-gradient(ellipse at 50% 50%, rgba(212, 175, 55, 0.4) 0%, transparent 80%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #051a10;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
+}
+
+/* Stand up animation pulses */
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.4), 0 0 20px rgba(34, 197, 94, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(34, 197, 94, 0.8), 0 0 35px rgba(223, 161, 31, 0.5);
+  }
+}
+
+.text-pulse-gold-green {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes floatLeaf {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.float-leaf-anim {
+  animation: floatLeaf 5s linear infinite;
+}
+
+/* Beautiful slow gold-halo breathing highlight for recitation pages */
+@keyframes readingHighlightPulse {
+  0%, 100% {
+    box-shadow: inset 0 0 45px rgba(212, 175, 55, 0.15), 0 0 15px rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.45);
+  }
+  50% {
+    box-shadow: inset 0 0 45px rgba(212, 175, 55, 0.25), 0 0 30px rgba(212, 175, 55, 0.3);
+    border-color: rgba(212, 175, 55, 0.9);
+  }
+}
+
+.active-reading-dark {
+  animation: readingHighlightPulse 3.5s infinite ease-in-out;
+  background: radial-gradient(circle at center, #0c3322 0%, #061e13 100%) !important;
+}
+
+@keyframes readingHighlightPulseLight {
+  0%, 100% {
+    box-shadow: inset 0 0 45px rgba(185, 142, 20, 0.1), 0 0 15px rgba(185, 142, 20, 0.08);
+    border-color: rgba(185, 142, 20, 0.35);
+  }
+  50% {
+    box-shadow: inset 0 0 45px rgba(185, 142, 20, 0.2), 0 0 25px rgba(185, 142, 20, 0.25);
+    border-color: rgba(185, 142, 20, 0.8);
+  }
+}
+
+.active-reading-light {
+  animation: readingHighlightPulseLight 3.5s infinite ease-in-out;
+  background: radial-gradient(circle at center, #ffffff 0%, #fbf3e4 50%, #f6ebd0 100%) !important;
+}

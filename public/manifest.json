@@ -1,0 +1,30 @@
+{
+  "short_name": "ريحانة الأرواح",
+  "name": "ريحانة الأرواح - كتاب المولد التفاعلي",
+  "description": "كتاب تفاعلي لقراءة قصة مولد النبي صلى الله عليه وسلم بروح تونسية شامية عطرة مع استماع وبث تلاوة وقراءة المولد الحية ومجلس القيام الشريف.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#01160c",
+  "theme_color": "#d4af37",
+  "display": "standalone",
+  "orientation": "portrait"
+}
